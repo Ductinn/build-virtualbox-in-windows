@@ -19,6 +19,10 @@ def main():
 
     # Download pre-requisites
     print('[+] Set up libraries')
+    if create_folder(f'{path_main_dir}/SSL'):
+        print('[-] Copy SSL')
+        shutil.copytree('C:/Program Files/OpenSSL-Win64', f'{path_main_dir}/SSL/OpenSSL-Win64')
+        shutil.copytree('C:/Program Files (x86)/OpenSSL-Win32', f'{path_main_dir}/SSL/OpenSSL-Win32')
     if create_folder(f'{path_main_dir}/7za'):
         print('[-] Download 7za')
         extract_to(url_7za, f'{path_main_dir}/7za', True)

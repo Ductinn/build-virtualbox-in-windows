@@ -35,6 +35,9 @@ Based on [this repository](https://github.com/st424204/build-virtualbox-in-windo
     * Use the installer to install Qt. You need to register an account first
     * Install the prebuild version ( `v5.15.2`, `MSVC 2019 64 bit` )
     * When it ask you the install path, set it to `C:\VBoxBuild\Qt`
+    * This take so much time (for VietNamese internet), build it yourself if you can.
+
+* [OPEN-SSL ver 1.1.1 32 & 64](https://slproweb.com/products/Win32OpenSSL.html)
 
 * MinGW
     * In this repo `setup.py` will install and build mingw for you, but you need to add `C:\VBoxBuild\MinGW\mingw64\bin` in the PATH env.
@@ -64,7 +67,7 @@ After that, the building steps are bascially the same as the [original](#2-set-u
     - This will do `kmk` and `kmk packing`, which will create an installer ( `.msi` file ) in `C:\VBoxBuild\VirtualBox\out\win.amd64\release\obj\Installer\win`.
 
 ### Troubleshooting  
-* Make sure to delete all the certificates named `MyTestCertificate` before building ( check the [FAQ](#faq) below ).  
+* Make sure to delete all the certificates named `MyTestCertificate` in certmgr.msc before building ( check the [FAQ](#faq) below ) (dont remove the one in our source folder).  
 * During the first build, it probably will run into error saying something like `No making rule for VBoxGuestAdditions.iso`. All you need to do is:  
     - `mkdir C:/VBoxBuild/VirtualBox/out/win.amd64/release/bin/additions/`  
     - `touch C:/VBoxBuild/VirtualBox/out/win.amd64/release/bin/additions/VBoxGuestAdditions.iso`  
