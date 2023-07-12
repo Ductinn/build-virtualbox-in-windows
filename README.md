@@ -35,7 +35,7 @@ Based on [this repository](https://github.com/st424204/build-virtualbox-in-windo
     * Use the installer to install Qt. You need to register an account first
     * Install the prebuild version ( `v5.15.2`, `MSVC 2019 64 bit` )
     * When it ask you the install path, set it to `C:\VBoxBuild\Qt`
-    * This take so much time (for VietNamese internet), build it yourself if you can.
+    * This takes so much time, build it yourself if you can.
 
 * [OPEN-SSL ver 1.1.1 32 & 64](https://slproweb.com/products/Win32OpenSSL.html)
 

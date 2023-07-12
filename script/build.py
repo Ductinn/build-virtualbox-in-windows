@@ -17,7 +17,7 @@ def main():
     execute_batch_x32_inst(f'SET PATH=%PATH%;{path_main_dir}\\curl\\x64\nSET PATH=%PATH%;{path_main_dir}\\curl\\x32\ncall comregister.cmd\nloadall.cmd')
 
     # Execute VBox
-    # execute_batch_x32_inst(f'SET PATH=%PATH%;{path_main_dir}\\Qt\\qt5-x64\\bin\nVirtualBox.exe')
+    execute_batch_x32_inst(f'SET PATH=%PATH%;{path_main_dir}\\Qt\\qt5-x64\\bin\nVirtualBox.exe')
 
 if __name__ == '__main__':
     main()
